@@ -1,0 +1,22 @@
+.div {
+    background-color:aquamarine;
+}
+h3 {
+    color:rgb(42, 42, 225);
+}
+#title {
+    color:rgb(59, 175, 175);/*dùng dấu # để gọi id*/
+}
+.background {
+    background-color: rgb(99, 163, 163);/* thẻ class thì gọi bằng "."*/
+    background-size: 40px;
+}
+.box1 {
+    background-color: aqua;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: auto;
+
+}
+.box2{}
