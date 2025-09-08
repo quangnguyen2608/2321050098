@@ -13,10 +13,10 @@ ul {
 }
 
 .danhmuc-danhsach {
-    /* display: flex; để theo 1 hàng ngang */
+    display: flex; /*để theo 1 hàng ngang */
     display: flex;
 
-    /* list-style: none; để bỏ dấu chấm */
+    list-style: none; /*để bỏ dấu chấm*/
     list-style: none;
     gap: 20px;
 }
@@ -24,14 +24,14 @@ ul {
 .danhmuc-lienket {
     color: white;
 
-    /* text-decoration: none; để bỏ gạch chân */
+     text-decoration: none; /*để bỏ gạch chân */
     text-decoration: none;
     padding: 20px;
     font-size: large;
 }
 
 .danhmuc-muc {
-    /* margin: 10px; */
+    margin: 10px;
 }
 
 .danhmuc-lienket:hover {
@@ -46,8 +46,8 @@ ul {
 }
 
 .left {
-    /* height: 1000px;
-    background-color: aqua; */
+    height: 1000px;
+    /* background-color: aqua; */
     width: 80%;
     border-radius: 10px;
 }
@@ -149,3 +149,43 @@ main {
 }
 
 
+.login h3,
+.app h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.login input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background: #1976d2;
+}
+
+.app img {
+  width: 100%;
+  border-radius: 3px;
+}
+.tittle {
+  background-color: #2fa4e7;
+  padding: 20px;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 10px 10px 0px 0px;
+}
