@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Bai7.js"></script>
+</head>
+<body>
+    <script>document.writeln("Hello World!"+" <br>");
+    //Noi chuoi dung dau +
+
+        let hoTen= "Nguyen Ba Quang"; 
+        //Khai bao bien js 
+
+        document.writeln(hoTen);
+
+        //Tính toán trong js
+        let soThuNhat = 15;
+        let soThuHai = 5;
+        let ketQua = 0;
+        //Phép cộng +, Phép trừ -, Phép nhân *, Phép chia /
+        ketQua = soThuNhat + soThuHai;
+        //soThuNhat=soThuNhat+soThuHai
+        soThuNhat+=soThuHai;
+        //Dùng ++ or -- để trước hàm trả kết quả
+        //VD: ketQua++ or document.writeln(++ketQua)
+        // == so sánh bằng, != so sánh nhất >,<,<=,>=
+        document.writeln(ketQua);
+        let thongTinSinhVien = {
+            hoTen : "Nguyen Ba Quang",
+            mssv:2321050098,
+            gioiTinh: true,
+            tuoi: 20,
+            lop: "Mang May Tinh k68",
+        }
+        let diaChiNha ={
+            tinh: "Nghe An",
+            thanhPho: "Quynh Mai",
+            soNha: 120
+        }
+        let namNay=2025;
+        let namSinh = namNay - thongTinSinhVien.tuoi;
+        thongTinSinhVien.diaChi = diaChiNha;
+        document.writeln("Wellcome!"+ " " +thongTinSinhVien.hoTen + " " + thongTinSinhVien.tuoi + " " + thongTinSinhVien.diaChi.tinh + " " + thongTinSinhVien.diaChi.thanhPho +  " " + namSinh);
+
+    </script>
+</body>
+</html>
