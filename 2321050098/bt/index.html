@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        Can nang (kg):
+        <input type="number" id="cangNang" placeholder="Nhap can nang">
+    </div>
+    <div>
+        Chieu cao (m):
+        <input type="number" id="chieuCao" placeholder="Nhap chieu cao">
+    </div>
+    <div>
+        <button onclick="tinhBMI()">Tính BMI</button>
+    </div>
+    <div>
+        Kết quả: <input type="text" id="ketQua">
+    </div>
+    <script>
+        function tinhBMI() {
+            // Lấy giá trị từ HTML input
+            let canNang = parseFloat(document.getElementById('cangNang').value);
+            let chieuCao = parseFloat(document.getElementById('chieuCao').value);
+
+            // Kiểm tra hợp lệ
+            if (kiemTraHopLe(canNang, chieuCao)) {
+                // Tính BMI
+                let bmi = canNang / (chieuCao * chieuCao);
+
+                // Tinh trang
+                let tinhTrang = danhGiaBMI(bmi);
+
+                // Hiển thị kết quả
+                document.getElementById('ketQua').value = "BMI: " + bmi.toFixed(2) + " - " + tinhTrang;
+            }
+        }
+
+        function kiemTraHopLe(a, b) {
+            let ketQua = true;
+
+            if (isNaN(a) || a <= 0) {
+                alert("Cân nặng không hợp lệ!");
+                ketQua = false;
+            }
+            if (isNaN(b) || b <= 0) {
+                alert("Chiều cao không hợp lệ!");
+                ketQua = false;
+            }
+
+            return ketQua;
+        }
+
+        function danhGiaBMI(bmi) {
+            if (bmi <= 18.5) return "Gay";
+            else if (18.5<= bmi <= 25) return "Bình thường";
+            else if (25<= bmi <= 30) return "Thừa cân";
+            else if (30<= bmi <= 39.9) return "Bel c1";
+            else return "Bél phì";
+        }
+    </script>
+</body>
+
+</html>
